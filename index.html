@@ -27,15 +27,15 @@
         <div class="home-content">
             <h3>Hi, Myself</h3>
             <h1>Akkenapally Sai Kumar</h1>
-            <h3>And I'm a <span class="multiple-text" id="multiple-text">Java Developer</span></h3>
+            <h3>And I'm a <span class="multiple-text" id="multiple-text"></span></h3>
 
             <div class="social-media">
                 <a href="https://www.linkedin.com/in/akkenapally-sai-kumar/"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://github.com/saikumarakkenapally"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.instagram.com/mr_innocent2k59"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/saikumarakkenapally_"><i class="fa-brands fa-instagram"></i></a>
             
             </div>
-            <a href="/cv/Sai  resume.pdf" class="btn"> Download CV</a>
+            <a href="/cv/sai.pdf" class="btn"> Download CV</a>
         </div>
         <div class="home-img" id="home-img">
             <img src="/Photos/new.jpg" alt="">
@@ -53,7 +53,7 @@
                 ABOUT <span>Me</span>
             </h2>
             <h3>
-                Java Developer
+                <span class="multiple-text" ></span>
             </h3>
             <p>Hello! I'm Akkenapally Sai Kumar, a recent mechanical engineering graduate with a strong desire to pivot my career toward the world of technology as a full-stack Java developer. While my academic journey began with gears and mechanics, my heart is now set on coding and crafting digital solutions.</p>
             <br>
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-    <!--Skills-->
+    <!-- Skills-->
 
     <!-- portfolio -->
    <!-- <section class="portfolio" id="portfolio">
@@ -110,7 +110,25 @@
         </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <!--<script src="js/main.js"></script>-->
+    <script>
+                let menuIcon = document.querySelector('#menu-icon');
+                let navbar = document.querySelector('.navbar');
+
+                menuIcon.onclick = () => {
+                menuIcon.classList.toggle('fa-xmark');
+                navbar.classList.toggle('active');
+    }
+    </script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed('.multiple-text', {
+        strings: ['Java Developer', 'Front-end Developer', 'Mechanical Engineer'],
+        typeSpeed: 70,
+        backSpeed: 70,
+        backDelay: 1000,
+        loop: true,
+        });
+    </script>
 </body>
 </html>
